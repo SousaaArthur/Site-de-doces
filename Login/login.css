@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: "Poppins", sans-serif;
-  background-color: #FFEDFA;
-  text-align: center;
-}
-
 .login-container{
   background-color: #FFB8E0;
   width: 350px;
