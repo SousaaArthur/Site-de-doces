@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../src/components/navbar.css">
+  <link rel="stylesheet" href="../../Libs/fontawesome-free-6.7.2-web/css/all.min.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="../../src/imgs/bolinho.png" type="image/x-icon">
+  <title>Tela de login</title>
+</head>
+<body>
+  <nav>
+    <div>
+      <h1>Sweet Delights</h1>
+    </div>
+    <ul>
+      <li><a href="../../index.html">Inicio</a></li>
+      <li>
+        <a href="#">Doces <b>˅</b></a>
+        <ul class="submenu">
+          <li><a href="#">Bolos</a></li>
+          <li><a href="#">Brigadeiros</a></li>
+          <li><a href="#">Chocolate</a></li>
+          <li><a href="#">Sorvete</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <ul>
+      <div class="icon-container">
+        <div class="notify">
+          <p>1</p>
+        </div>
+        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+      </div>
+      <li class="btn-login"><a href="./Login/login.html">Entrar</a></li>
+      <li class="btn-register"><a href="#">Cadastrar</a></li>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="login-container">
+      <h2>Login Usuário</h2>
+      <form action="">
+        <div class="input-group">
+          <label for="text-usuario">Usuário:</label>
+          <input type="text" id="text-usuario" name="text-usuario" placeholder="Seu usuário..." required>
+        </div>
+        <div class="input-group">
+          <label for="text-senha">Senha:</label>
+          <input type="password" id="text-senha" name="text-senha" placeholder="Sua senha..." required>
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+  </div>
+</body>
+</html>
