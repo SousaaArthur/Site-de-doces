@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../src/components/navbar.css">
+  <link rel="stylesheet" href="../../src/components/styles/navbar.css">
   <link rel="stylesheet" href="../../Libs/fontawesome-free-6.7.2-web/css/all.min.css">
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="./cadastro.css">
+  <script type="module" src="./cadastro.js"></script>
   <link rel="icon" href="../../src/imgs/bolinho.png" type="image/x-icon">
-  <title>Tela de login</title>
+  <title>Tela de cadastro</title>
 </head>
 <body>
   <nav>
@@ -61,28 +62,32 @@
           <a>Comprar</a>
         </div>
       </div>
-      <li class="btn-login"><a href="./pages/Login/login.html">Entrar</a></li>
+      <li class="btn-login"><a href="../Login/login.html">Entrar</a></li>
       <li class="btn-register"><a href="#">Cadastrar</a></li>
       </li>
     </ul>
   </nav>
 
   <div class="login-container">
-      <h2>Login Usuário</h2>
+      <h2>Cadastrar Usuário</h2>
       <form action="">
         <div class="input-group">
-          <label for="txtEmail">E-mail</label>
-          <input type="email" id="txtName" name="txtEmail" placeholder="exemplo@email.com" required>
-        </div>
-        <div class="input-group">
-          <label for="txtEmail">Nome</label>
+          <label for="txtName">Nome</label>
           <input type="text" id="txtName" name="txtName" placeholder="Joãozinho do grau" required>
         </div>
         <div class="input-group">
-          <label for="text-senha">Senha:</label>
-          <input type="password" id="text-senha" name="text-senha" placeholder="*****" required>
+          <label for="txtEmail">E-mail</label>
+          <input type="email" id="txtEmail" name="txtEmail" placeholder="exemplo@email.com" required>
         </div>
-        <button type="submit">Entrar</button>
+        <div class="input-group">
+          <label for="text-senha">Senha:</label>
+          <input type="password" id="txtSenha" name="txtSenha" placeholder="*********" required>
+        </div>
+        <div class="input-group">
+          <label for="txtConfirmarSenha">Confirmar Senha:</label>
+          <input type="password" id="txtConfirmarSenha" name="txtConfirmarSenha" placeholder="*********" required>
+        </div>
+        <button type="submit" id="btnCadastrar">Entrar</button>
       </form>
   </div>
 </body>

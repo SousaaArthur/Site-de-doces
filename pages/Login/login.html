@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../src/components/navbar.css">
+  <link rel="stylesheet" href="../../src/components/styles/navbar.css">
   <link rel="stylesheet" href="../../Libs/fontawesome-free-6.7.2-web/css/all.min.css">
   <link rel="stylesheet" href="login.css">
   <link rel="icon" href="../../src/imgs/bolinho.png" type="image/x-icon">
+  <script type="module" src="./login.js"></script>
   <title>Tela de login</title>
 </head>
 <body>
@@ -61,8 +62,8 @@
           <a>Comprar</a>
         </div>
       </div>
-      <li class="btn-login"><a href="./pages/Login/login.html">Entrar</a></li>
-      <li class="btn-register"><a href="#">Cadastrar</a></li>
+      <li class="btn-login"><a href="#">Entrar</a></li>
+      <li class="btn-register"><a href="../Cadastro/cadastro.html">Cadastrar</a></li>
       </li>
     </ul>
   </nav>
@@ -71,15 +72,16 @@
       <h2>Login Usuário</h2>
       <form action="">
         <div class="input-group">
-          <label for="text-usuario">Usuário:</label>
-          <input type="text" id="text-usuario" name="text-usuario" placeholder="Seu usuário..." required>
+          <label for="txtEmail">E-mail:</label>
+          <input type="email" id="txtEmail" name="txtEmail" placeholder="Seu e-mail..." required>
         </div>
         <div class="input-group">
-          <label for="text-senha">Senha:</label>
-          <input type="password" id="text-senha" name="text-senha" placeholder="Sua senha..." required>
+          <label for="txtSenha">Senha:</label>
+          <input type="password" id="txtSenha" name="txtSenha" placeholder="Sua senha..." required>
         </div>
-        <button type="submit">Entrar</button>
+        <button id="btnEntrar" type="submit">Entrar</button>
       </form>
+      <p>Esqueci <a href="">minha senha</a>.</p>
   </div>
 </body>
 </html>

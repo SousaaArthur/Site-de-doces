@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --secondary-color: #FBD8EC;
+  --primary-color: #db2777;
+  --dark-pink: #9d174d;;
+  --white: #ffffff;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +15,7 @@
 }
 
 .login-container{
-  background-color: #FFB8E0;
+  background-color: var(--white);
   width: 350px;
   margin: 80px auto;
   padding: 20px;
@@ -15,6 +24,7 @@
 }
 
 .login-container h2{
+  color: var(--dark-pink);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -27,19 +37,20 @@
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  color: var(--primary-color);
 }
 
 .input-group input{
   width: 100%;
   padding: 10px;
-  border: 1px solid #fafafa;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
 }
 
 button{
   width: 100%;
   padding: 10px;
-  background-color: #0e0e0e;
+  background-color: var(--dark-pink);
   color: #fafafa;
   border: none;
   border-radius: 5px;
