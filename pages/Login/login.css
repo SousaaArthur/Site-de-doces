@@ -21,6 +21,10 @@
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .login-container h2{

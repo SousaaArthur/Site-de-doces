@@ -18,9 +18,18 @@ body{
   font-family: "Poppins", sans-serif;
   background-color: var(--secondary-color);
   text-align: center;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  margin: 0;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   background-color: var(--white);
@@ -34,10 +43,11 @@ nav div{
   padding: 0px 10px;
 }
 
-.logo{
-  padding-top: .2rem;
-  text-align: center;
-  justify-content: center;
+.logo {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 0.2rem 2rem;
 }
 
 nav div img{
@@ -78,6 +88,7 @@ nav ul li{
 }
 
 .cart-button{
+  top: 15%;
   position: relative;
   display: inline-block;
 }
@@ -116,7 +127,8 @@ nav ul li{
   display: block;
   justify-content: start;
   flex-direction: column;
-  overflow: auto;
+  overflow-y: auto;
+  scrollbar-color: var(--dark-pink) var(--white) /* Cor do scroll */
 }
 
 .cart-products .products-list .product{
@@ -184,17 +196,30 @@ nav ul li a:hover{
 
 .btn-login a{
   font-weight: 500;
-  border: solid 3px var(--primary-color);
+  border: solid 2px var(--primary-color);
   padding: 8px;
   border-radius: 5px;
+  transition: .5s;
+}
+
+.btn-login a:hover{
+  background-color: #f04592;
+  color: var(--white);
 }
 
 .btn-register a{
   font-weight: 500;
+  border: solid 2px var(--primary-color);
   background: var(--primary-color);
   color: var(--secondary-color);
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
+  transition: .5s;
+}
+
+.btn-register a:hover{
+  background-color: #f04592;
+  color: var(--white);
 }
 
 /* Submenu */
