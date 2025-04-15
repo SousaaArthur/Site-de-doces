@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../src/components/styles/navbar.css">
+  <link rel="stylesheet" href="../../Libs/fontawesome-free-6.7.2-web/css/all.min.css">
+  <title>Finalizar Pedido</title>
+</head>
+<body>
+  <nav>
+    <div>
+      <h1>Sweet Delights</h1>
+    </div>
+    <ul>
+      <li><a href="../../index.html">Inicio</a></li>
+      <li>
+        <a href="#">Doces <b>˅</b></a>
+        <ul class="submenu">
+          <li><a href="#">Bolos</a></li>
+          <li><a href="#">Brigadeiros</a></li>
+          <li><a href="#">Chocolate</a></li>
+          <li><a href="#">Sorvete</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <ul>
+      <div class="cart-button">
+        <div class="notify">
+          <p>4</p>
+        </div>
+        <div class="icon-cart">
+          <i class="fa-solid fa-cart-shopping fa-2x"></i>
+        </div>
+        <div class="cart-products">
+          <div class="products-list">
+            <div class="product">
+              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
+              <p>Bolo de cenoura</p>
+              <i class="fa-solid fa-trash-can trash-btn"></i>
+            </div>
+            <div class="product">
+              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
+              <p>Açaí médio</p>
+              <i class="fa-solid fa-trash-can trash-btn"></i>
+            </div>
+            <div class="product">
+              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
+              <p>Brigadeiros</p>
+              <i class="fa-solid fa-trash-can trash-btn"></i>
+            </div>
+            <div class="product">
+              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
+              <p>Brigadeiros</p>
+              <i class="fa-solid fa-trash-can trash-btn"></i>
+            </div>
+          </div>
+          <a>Comprar</a>
+        </div>
+      </div>
+      <li class="btn-login"><a href="#">Entrar</a></li>
+      <li class="btn-register"><a href="../Cadastro/cadastro.html">Cadastrar</a></li>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Finalizar Pedido</h1>
+
+    <div class="resumo-pedido">
+      <h2>Resumo do Pedido</h2>
+      <ul>
+        <li><span>Bolo de Cenoura</span><span>R$ 25,00</span></li>
+        <li><span>Pão de mel</span><span>R$ 10,00</span></li>
+        <li><span>Taxa de entrega</span><span>R$ 5,00</span></li>
+      </ul>
+      <div class="total">Total: R$ 40,00</div>
+    </div>
+
+    <div class="formulario">
+      <h2>Seus dados</h2>
+      <form>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="John Doe" required/>
+
+        <div class="input-group">
+          <div>
+            <label for="txtCEP">CEP</label>
+            <input type="text" id="txtCEP" name="txtCEP" placeholder="01234-567" required>
+          </div>
+          <div>
+            <label for="txtStreet">Rua</label>
+            <input type="text" id="txtStreet" name="txtStreet" placeholder="Bairro do limoeiro" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div>
+            <label for="txtNeighborhood">Bairro</label>
+            <input type="text" id="txtNeighborhood" name="txtNeighborhood" >
+          </div>
+          <div>
+            <label for="txtState">Estado</label>
+            <input type="text" id="txtState" name="txtState" required>
+          </div>
+        </div>
+
+        <label for="telefone">Telefone para contato</label>
+        <input type="tel" id="telefone" name="telefone" required />
+      </form>
+    </div>
+
+    <button class="botao-finalizar">Finalizar Pedido</button>
+  </div>
+
+  <script src="./pedidos.js"></script>
+</body>
+</html>

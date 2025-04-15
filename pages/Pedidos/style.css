@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --secondary-color: #FBD8EC;
+  --primary-color: #db2777;
+  --dark-pink: #9d174d;;
+  --white: #ffffff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 5rem auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.resumo-pedido {
+  margin-bottom: 30px;
+}
+
+.resumo-pedido h2 {
+  margin-bottom: 10px;
+  color: var(--dark-pink);
+}
+
+.resumo-pedido ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resumo-pedido li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: right;
+  color: var(--dark-pink);
+}
+
+.formulario {
+  margin-bottom: 30px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.formulario input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.botao-finalizar {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.botao-finalizar:hover {
+  background-color: #c0246a;
+}
+
+.input-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.input-group input{
+  width: 16.5rem;
+}
