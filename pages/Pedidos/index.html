@@ -92,29 +92,48 @@
           </div>
           <div>
             <label for="txtStreet">Rua</label>
-            <input type="text" id="txtStreet" name="txtStreet" placeholder="Bairro do limoeiro" required>
+            <input type="text" class="input-disabled" id="txtStreet" name="txtStreet" placeholder="Bairro do limoeiro" disabled required>
           </div>
         </div>
 
         <div class="input-group">
           <div>
             <label for="txtNeighborhood">Bairro</label>
-            <input type="text" id="txtNeighborhood" name="txtNeighborhood" >
+            <input type="text" class="input-disabled" id="txtNeighborhood" name="txtNeighborhood" required disabled>
           </div>
           <div>
             <label for="txtState">Estado</label>
-            <input type="text" id="txtState" name="txtState" required>
+            <input type="text" class="input-disabled" id="txtState" name="txtState" required disabled>
           </div>
         </div>
 
-        <label for="telefone">Telefone para contato</label>
-        <input type="tel" id="telefone" name="telefone" required />
+        <label for="txtCity">Cidade</label>
+        <input type="tel" class="input-disabled" id="txtCity" name="txtCity" required disabled/>
       </form>
     </div>
 
-    <button class="botao-finalizar">Finalizar Pedido</button>
+    <button class="botao-finalizar" id="checkoutBtn">Finalizar Pedido</button>
   </div>
 
+  <!-- Tela de previsão do tempo -->
+  <div class="floating-screen hidden">
+    <div class="btn-close">
+      <button>
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <h2>Previsão do tempo</h2>
+    <div class="img-container">
+      <img src="../../src/components/images/SVGs/Weather-amico.png" alt="">
+    </div>
+    <div class="information">
+      <p>Cidade: <span id="climateCity"></span></p>
+      <p>Temperatura maxima: <span id="maximumTemp"></span>cº</p>
+      <p>Sobre o clima: <br> <span id="aboutClimate"></span></p>
+    </div>
+  </div>
+
+  <script src="../../config.js"></script>
   <script src="./pedidos.js"></script>
 </body>
 </html>

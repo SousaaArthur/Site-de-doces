@@ -11,19 +11,14 @@
   max-width: 600px;
   margin: 5rem auto;
   background: #fff;
-  padding: 30px;
+  padding: 30px 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .container h1 {
   text-align: center;
-  margin-bottom: 30px;
   color: var(--primary-color);
-}
-
-.resumo-pedido {
-  margin-bottom: 30px;
 }
 
 .resumo-pedido h2 {
@@ -58,7 +53,7 @@
 .formulario label {
   display: block;
   margin-bottom: 5px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .formulario input{
@@ -93,4 +88,73 @@
 
 .input-group input{
   width: 16.5rem;
+}
+
+.input-disabled{
+  background-color: #e2e2e2;
+}
+
+.floating-screen{
+  position: absolute;
+  width: 25rem;
+  height: 26rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border: solid 1px #c9c9c9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 5px rgb(24, 24, 24);
+}
+
+.hidden{
+  display: none;
+}
+
+.floating-screen h2{
+  color: #c0246a;
+}
+
+.btn-close{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.btn-close button{
+  border: none;
+}
+
+.btn-close i{
+  font-size: 20px;
+  color: #c0246a;
+  cursor: pointer;
+}
+
+.img-container img{
+  width: 60%;
+}
+
+.information{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.information p{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.information span{
+  color: #db2777;
+  font-weight: 600;
 }
