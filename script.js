@@ -1,4 +1,6 @@
 
+const cookie = document.querySelector('.politics-cookies');
+
 document.querySelectorAll('.carrosel').forEach(carrosel => {
   const container = carrosel.querySelector('.card-container');
   const nextBtn = carrosel.querySelector('.next');
@@ -14,3 +16,7 @@ document.querySelectorAll('.carrosel').forEach(carrosel => {
     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
 });
+
+function cookieHidden() {
+  cookie.style.display = 'none';
+}

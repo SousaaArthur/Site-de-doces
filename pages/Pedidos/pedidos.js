@@ -12,6 +12,7 @@ const floatingScreen = document.querySelector('.floating-screen');
 
 inputCep.addEventListener('change', () => {
   const cepValue = inputCep.value;
+  const apiKey = '78718238052d4708920231914251604';
 
   if (cepValue) {
     fetch(`https://viacep.com.br/ws/${cepValue}/json/`)
@@ -34,7 +35,7 @@ inputCep.addEventListener('change', () => {
 
         let city = dados.localidade;
 
-        fetch(`https://api.weatherapi.com/v1/current.json?key=${CONFIG.API_KEY}&q=${city}&lang=pt`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&lang=pt`)
         .then(response => {
           if(!response.ok) {
             throw new Error('Erro ao fazer a requisição da Weather API');

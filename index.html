@@ -15,16 +15,16 @@
       <h1>Sweet Delights</h1>
     </div>
     <ul>
-      <li><a href="#">Inicio</a></li>
+      <li><a href="#initial">Inicio</a></li>
       <li>
-        <a href="#">Doces <b>˅</b></a>
+        <a href="#bolos">Doces <b>˅</b></a>
         <ul class="submenu">
-          <li><a href="#">Bolos</a></li>
-          <li><a href="#">Chocolate</a></li>
-          <li><a href="#">Sorvete</a></li>
+          <li><a href="#bolos">Bolos</a></li>
+          <li><a href="#chocolate">Chocolate</a></li>
+          <li><a href="#sorvete">Sorvete</a></li>
         </ul>
       </li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="#contact">Contato</a></li>
     </ul>
     <ul>
       <div class="cart-button">
@@ -57,7 +57,7 @@
               <i class="fa-solid fa-trash-can trash-btn"></i>
             </div>
           </div>
-          <a>Comprar</a>
+          <a href="./pages/Pedidos/index.html">Comprar</a>
         </div>
       </div>
       <li class="btn-login"><a href="./pages/Login/login.html">Entrar</a></li>
@@ -65,7 +65,7 @@
       </li>
     </ul>
   </nav>
-  <section class="initial">
+  <section class="initial" id="initial">
     <div class="column-left">
       <img src="./src/components/images/red velvet cake-amico.svg" alt="">
     </div>
@@ -76,7 +76,7 @@
     </div>
   </section>
   <section class="products">
-    <div class="container-products">
+    <div class="container-products" id="bolos">
       <h1>Bolos</h1>
       <div class="carrosel">
         <button class="btn-carrosel prev">
@@ -186,7 +186,7 @@
       </div>
     </div>
 
-    <div class="container-products">
+    <div class="container-products" id="chocolate">
       <h1>Chocolate</h1>
       <div class="carrosel">
         <button class="btn-carrosel prev">
@@ -295,7 +295,121 @@
         </button>
       </div>
     </div>
+
+    <div class="container-products" id="sorvete">
+      <h1>Sorvetes</h1>
+      <div class="carrosel">
+        <button class="btn-carrosel prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="card-container">
+          <div class="card">
+            <div class="img-card">
+              <img src="./src/components/images/sorvetes/308761-o-que-e-sorvete-de-massa-e-quais-as-diferencas-para-os-outros-1.jpg">
+            </div>
+            <div class="description-card">
+              <h3>Sorvete de Chocolate</h3>
+              <p>R$ 7,00</p>
+            </div>
+            <div class="btn-card">
+              <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Adicionar
+              </button>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="img-card">
+              <img src="./src/components/images/sorvetes/308761-o-que-e-sorvete-de-massa-e-quais-as-diferencas-para-os-outros-1.jpg" alt="">
+            </div>
+            <div class="description-card">
+              <h3>Sorvete de Chocolate</h3>
+              <p>R$ 3,50</p>
+            </div>
+            <div class="btn-card">
+              <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Adicionar
+              </button>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="img-card">
+              <img src="./src/components/images/sorvetes/images.jpeg" alt="">
+            </div>
+            <div class="description-card">
+              <h3>Sorvete de flocos</h3>
+              <p>R$ 9,75</p>
+            </div>
+            <div class="btn-card">
+              <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Adicionar
+              </button>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="img-card">
+              <img src="./src/components/images/sorvetes/Quais_são_os_melhores_acompanhamentos_para_açai.webp">
+            </div>
+            <div class="description-card">
+              <h3>Açai</h3>
+              <p>R$ 11,00</p>
+            </div>
+            <div class="btn-card">
+              <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Adicionar
+              </button>
+            </div>
+          </div>
+    
+        </div>
+        <button class="btn-carrosel next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
   </section>
+
+  <div class="title-contact" id="contact">
+    <h1>Contatos</h1>
+  </div>
+  <section class="containter-contact">
+    <div class="column-left">
+      <h1>Entre em contato</h1>
+      <p>Tem alguma dúvida ou sugestão? Entre em contato conosco! Estamos aqui para ajudar.</p>
+      <form action="" class="contact-form">
+        <div class="form-group">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" rows="4" cols="50" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="column-right">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467688.89495119266!2d-46.5952992!3d-23.6824124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1748796905785!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Site de Doces. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <div class="politics-cookies">
+    <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com nossa <a href="#">Política de Cookies</a>.</p>
+    <button onclick="cookieHidden()">OK</button>
+  </div>
 
   <script src="./script.js"></script>
 </body>

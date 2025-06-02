@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .initial{
   display: flex;
   width: 100%;
   height: 90vh;
 }
+
 
 .column-left{
   display: flex;
@@ -177,4 +182,135 @@
   font-size: 2rem;
   color: #c0246a;
   cursor: pointer;
+}
+
+.title-contact h1{
+  color: #db2777;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.containter-contact{
+  display: flex;
+  width: 100%;
+  height: 90vh;;
+}
+
+.containter-contact h1{
+  color: #db2777;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+.containter-contact .column-left{
+  width: 50%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.contact-form input, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#db2777;
+}
+
+.social-icons{
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.social-icons a {
+  color: #db2777;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.politics-cookies {
+  position: fixed; /* Mude de 'relative' para 'fixed' */
+  bottom: 0;       /* Alinha à parte inferior da viewport */
+  left: 0;         /* Alinha à esquerda da viewport */
+  width: 100%;     /* Faz com que ocupe 100% da largura */
+  font-size: 14px;
+  color: #424242;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 10px;
+  border-top: 1px solid #db2777;
+  z-index: 1000;   /* Garante que fique acima de outros elementos se houver sobreposição */
+  box-sizing: border-box; /* Garante que padding e border não aumentem a largura total além de 100% */
+}
+
+.politics-cookies a {
+  color: #db2777;
+  text-decoration: none;
+  font-weight: bold;
+}
+.politics-cookies a:hover {
+  text-decoration: underline;
+}
+
+.politics-cookies button {
+  background-color: #db2777;
+  color: #fafafa;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
 }
