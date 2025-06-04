@@ -29,33 +29,14 @@
     <ul>
       <div class="cart-button">
         <div class="notify">
-          <p>4</p>
+          <p id="cart-count"></p>
         </div>
         <div class="icon-cart">
           <i class="fa-solid fa-cart-shopping fa-2x"></i>
         </div>
         <div class="cart-products">
           <div class="products-list">
-            <div class="product">
-              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
-              <p>Bolo de cenoura</p>
-              <i class="fa-solid fa-trash-can trash-btn"></i>
-            </div>
-            <div class="product">
-              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
-              <p>Açaí médio</p>
-              <i class="fa-solid fa-trash-can trash-btn"></i>
-            </div>
-            <div class="product">
-              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
-              <p>Brigadeiros</p>
-              <i class="fa-solid fa-trash-can trash-btn"></i>
-            </div>
-            <div class="product">
-              <i class="fa-solid fa-image fa-3x" style="color: #B197FC;"></i>
-              <p>Brigadeiros</p>
-              <i class="fa-solid fa-trash-can trash-btn"></i>
-            </div>
+
           </div>
           <a href="./pages/Pedidos/index.html">Comprar</a>
         </div>
@@ -92,7 +73,7 @@
               <p>R$ 24,00</p>
             </div>
             <div class="btn-card">
-              <button>
+              <button onclick="addProductToCart()">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Adicionar
               </button>
